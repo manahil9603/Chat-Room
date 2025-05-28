@@ -5,8 +5,7 @@
     <title>Chatroom</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-</head>
+    
 <body>
     <div class="app">
         <!-- Join Screen -->
@@ -31,15 +30,28 @@
             </div>
             <div class="messages" id="messages"></div>
             <div class="typebox">
+                <button id="sticker-button">📁</button>
+            <div class="sticker-panel" id="sticker-panel" style="display: none;">
+                <img src="stickers/happy.png" class="sticker" alt="sticker">
+                <img src="stickers/1.jpeg" class="sticker" alt="sticker">
+                <img src="stickers/2.png" class="sticker" alt="sticker">
+                <img src="stickers/3.png" class="sticker" alt="sticker">
+                <img src="stickers/4.png" class="sticker" alt="sticker">
+                <img src="stickers/5.png" class="sticker" alt="sticker">
+                <img src="stickers/laugh.jpeg" class="sticker" alt="sticker">
+                <img src="stickers/love.jpeg" class="sticker" alt="sticker">
+            </div>
                 <input type="text" id="message-input" placeholder="Type your message...">
                 <button id="send-message">Send</button>
             </div>
+
         </div>
     </div>
 
-    <!-- Include Socket.IO and your custom JS -->
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="code.js"></script>
+   
+    <script src="/socket.io/socket.io.js"></script>   
+    <script src="code.js" defer></script>
+
 
 </body>
 </html>
